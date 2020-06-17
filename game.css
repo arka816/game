@@ -1,0 +1,79 @@
+html{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#maincanvas{
+    background-color: yellow;
+    position: relative;
+    top: 5vw;
+    left: 5vw;
+    height: 400px;
+    width: 400px;
+    z-index: 0;
+}
+#overlaycanvas{
+    background-color: transparent;
+    position: relative;
+    top: 5vw;
+    left: calc(5vw - 404px);
+    height: 400px;
+    width: 400px;
+    z-index: 1;
+}
+section{
+    position: relative;
+    top: 7vw;
+    left: 5vw;
+}
+#scoreboard{
+    background-color: transparent;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    z-index: 1000;
+    color: black;
+    position: relative;
+    top: calc(5vw + 60px);
+    left: calc(5vw + 300px);
+    font-family: 'Helvetica', sans-serif;
+}
+#restart{
+    user-select: none;
+    cursor: pointer;
+    visibility: hidden;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    z-index: 1000;
+    color: black;
+    position: relative;
+    top: calc(5vw + 215px);
+    left: calc(5vw + 150px);
+    font-family: Helvetica, sans-serif;
+}
+
+.controlBtn{
+    outline: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}

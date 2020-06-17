@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="game.css">
+        <script src="game.js"></script>
+    </head>
+    <body onload="loadObjects()" onkeydown="handleKey(event)">
+        <div id="scoreboard">Score: 0</div>
+        <div id="restart" onclick="reloadWindow()">RESTART</div>
+        <canvas id="maincanvas"></canvas>
+        <canvas id="overlaycanvas"></canvas>
+        <section style="width: 400px; text-align: center;">
+            <button class="controlBtn" id="up" onclick="moveGamePieceV(-5)">U</button>
+            <br />
+            <button class="controlBtn" id="left" onclick="moveGamePieceH(-5)">L</button>
+            <button class="controlBtn" id="right" onclick="moveGamePieceH(5)">R</button>
+            <br />
+            <button class="controlBtn" id="down" onclick="moveGamePieceV(5)">D</button>
+        </section>
+        <section>
+            <button id="stop" onclick="stop()">STOP</button>
+            <button id="resume" onclick="resume()">RESUME</button>
+        </section>
+    </body>
+</html>
